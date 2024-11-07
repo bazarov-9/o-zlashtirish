@@ -4,8 +4,330 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/output.css">
 </head>
-<body>
-
+  <body class="bg-black">
+  
+      <div class="flex items-center justify-between px-6 lg:px-44 container mx-auto mt-5">
+          <!-- Logo -->
+          <a href="#" class="hover:text-amber-400 text-white text-xl">First Flight <br> School</a>
+    
+          <!-- Burger Button for Mobile -->
+          <div class="lg:hidden">
+            <button id="burger" class="hover:text-amber-400 text-white text-2xl focus:outline-none">
+              ☰
+            </button>
+          </div>
+    
+          <!-- Menu for Desktop -->
+          <ul id="menu" class="hidden lg:flex space-x-10 text-white gap-20">
+            <li><a href="#home" class="hover:text-amber-400">О себе</a></li>
+            <li><a href="#about" class="hover:text-amber-400">Для кого</a></li>
+            <li><a href="#services" class="hover:text-amber-400">Преподователь</a></li>
+            <li><a href="#contact" class="hover:text-amber-400">Программа</a></li>
+          </ul>
+    
+          <!-- Button for Desktop -->
+          <a href="#home" class="hidden lg:block">
+            <button class=" rounded-lg border-2 border-[#4958f6]">
+              <p class="text-white py-2 px-6  hover:bg-blue-600 hover:text-white">Записаться</p>
+            </button>
+          </a>
+        </div>
+    
+        <!-- Responsive Mobile Menu -->
+        <ul id="mobileMenu" class="hidden flex-col lg:hidden mt-4 px-6 bg-black rounded text-white space-y-2">
+          <li><a href="#home" class="block px-4 py-2 hover:bg-amber-500">О себе</a></li>
+          <li><a href="#about" class="block px-4 py-2 hover:bg-amber-500">Для кого</a></li>
+          <li><a href="#services" class="block px-4 py-2 hover:bg-amber-500">Преподователь</a></li>
+          <li><a href="#contact" class="block px-4 py-2 hover:bg-amber-500">Программа</a></li>
+        </ul>
+    
+      
+    
+  
+  
+    <section class="container m-auto flex flex-col items-center md:flex-row justify-around px-6 py-12 md:py-24">
+      <div class="text-center md:text-left max-w-md space-y-4">
+        <span class="inline-block bg-blue-600 text-sm px-3 py-1 rounded-full text-white hover:bg-blue-600 hover:text-white cursor-pointer">Профессия</span>
+        <h2 class="text-4xl text-white md:text-5xl font-bold">3D-Художник по персонажам</h2>
+        <p class="text-gray-300">Курс, где ты с нуля получишь навыки востребованного 3D-художника для перспективной работы в Геймдеве, кинематографе или анимации с высокой оплатой труда.</p>
+        <button class="bg-blue-600 text-white px-6 py-3 mt-4 rounded-full hover:bg-blue-700">Записаться</button>
+      </div>
+      <div class="mt-8 md:mt-0 w-56 h-96  ">
+        <img src="./images/Image (1).png" alt="3D Character Image" class="rounded-lg w-96 mt-36 h-60">
+      </div>
+    </section>
+  
+    <section class="container mx-auto bg-black py-8 px-6 rounded-lg flex justify-center flex-wrap gap-6">
+      <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Blender" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
+      <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="ZBrush" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
+      <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Substance Painter" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
+      <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Marmoset Toolbag" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
+      <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Maya" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
+    </section>
+    
+  
+  
+    <section class="container m-auto px-6 py-12 md:flex md:justify-center md:space-x-8">
+      <!-- Media Section -->
+      <div class="md:w-96 max-w-md bg-gray-800 rounded-lg overflow-hidden mb-6 md:mb-0">
+        <img src="./images/Снимок экрана 2024-11-01 194808.png" alt="Course Media" class="w-96">
+        <div class="p-4 text-center">
+          <button class="bg-blue-600 rounded-full p-2">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+        </div>
+      </div>
+  
+      <!-- Course Description -->
+      <div class="md:w-1/2 max-w-md space-y-4">
+        <h2 class="text-2xl text-white font-bold">О курсе</h2>
+        <p class="text-gray-300">Получите уникальный опыт работы с самыми мощными инструментами для создания трендовых персонажей, а также научитесь основам моделирования, текстурирования и рендеринга.</p>
+        
+        <!-- Course Stats -->
+        <div class="flex justify-between text-center pt-4">
+          <div>
+            <p class="text-3xl font-bold">96</p>
+            <p class="text-gray-400">уроков по 30 минут</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold">6</p>
+            <p class="text-gray-400">месяцев наставничества</p>
+          </div>
+          <div>
+            <p class="text-3xl font-bold">2</p>
+            <p class="text-gray-400">работы в портфолио</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section class="container max-w-4xl m-auto px-6 py-12">
+      <h2 class="text-2xl font-bold mb-8">Для кого</h2>
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Beginners Card -->
+        <div class="bg-blue-800 p-6 rounded-lg text-center flex flex-col items-center">
+          <img src="./images/Image (2).png" alt="Beginners Icon" class="w-32 h-32 mb-4">
+          <h3 class="text-lg font-bold">Новички</h3>
+          <p class="text-gray-300 mt-2">
+            Для людей, которые хотят освоить 3D-дизайн с нуля, получив необходимые знания и навыки, востребованные программой ZBrush.
+          </p>
+        </div>
+    
+        <!-- Experienced Artists Card -->
+        <div class="bg-blue-800 p-6 rounded-lg text-center flex flex-col items-center">
+          <img src="./images/Frame (1).png" alt="Experienced Icon" class="w-32 h-32 mb-4">
+          <h3 class="text-lg font-bold">Опытные художники</h3>
+          <p class="text-gray-300 mt-2">
+            Для художников, стремящихся улучшить свои навыки и научиться создавать высококачественные персонажи для индустрии.
+          </p>
+        </div>
+    
+        <!-- Hobbyists Card -->
+        <div class="bg-blue-800 p-6 rounded-lg text-center flex flex-col items-center">
+          <img src="./images/Frame (2).png" alt="Hobby Icon" class="w-32 h-32 mb-4">
+          <h3 class="text-lg font-bold">Хобби</h3>
+          <p class="text-gray-300 mt-2">
+            Для людей, которые увлекаются творчеством и хотят погрузиться в мир 3D-дизайна на любительском уровне.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section   class="container w-[1200px] m-auto  bg-black text-white p-6 rounded-lg w-4xl mx-auto">
+       <!-- Top section with image and name/info -->
+       <div class="flex items-center gap-6">
+          <!-- Left side - Profile Image -->
+          <div>
+            <img src="./images/Image (8).png" alt="Vitaliy Volokitin" class=" w-80 h-56 rounded-lg" />
+          </div>
+      
+          <!-- Right side - Profile Information -->
+          <div>
+            <h1 class="text-2xl font-semibold">Виталий Волокитин</h1>
+            <p class="text-lg text-blue-400">3D-Artist</p>
+            <div class="flex items-center gap-6 mt-4">
+              <div class="flex flex-col items-center">
+                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><!-- Icon code --></svg>
+                <p>Художник по персонажам</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><!-- Icon code --></svg>
+                <p>В игровой индустрии более 7 лет</p>
+              </div>
+              <div class="flex flex-col items-center">
+                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><!-- Icon code --></svg>
+                <p>Работал в компаниях: Wargaming, 101xp, MyGames</p>
+              </div>
+            </div>
+          </div>
+      
+          <!-- Portfolio Link -->
+          <div class="ml-auto">
+            <a href="#" class="text-blue-400 flex items-center gap-2">
+              <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><!-- Icon code for ArtStation --></svg>
+              <span>Посмотреть портфолио:</span>
+            </a>
+          </div>
+        </div>
+      
+        <!-- Bottom section with artwork images -->
+        <div class="flex  justify-around gap-4 mt-6">
+          <img src="./images/Image (7).png" alt="Artwork 1" class="w-32 h-32 rounded-lg object-cover" />
+          <img src="./images/Image (7).png" alt="Artwork 2" class="w-32 h-32 rounded-lg object-cover" />
+          <img src="./images/Image (7).png" alt="Artwork 3" class="w-32 h-32 rounded-lg object-cover" />
+          <img src="./images/Image (7).png" alt="Artwork 4" class="w-32 h-32 rounded-lg object-cover" />
+        </div>
+    
+    </section>
+     <section class="container w-[1200px] m-auto bg-black text-white p-8 ">
+        <!-- Title -->
+      <h2 class="text-3xl font-bold mb-8">Процесс обучения</h2>
+    
+      <!-- Card Container -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Video Lessons Card -->
+        <div class="bg-blue-700 p-6 rounded-lg relative">
+          <h3 class="text-xl font-semibold">Видео уроки</h3>
+          <p class="mt-4 text-sm  ">
+            Курс представляет собой комплекс из видеоуроков, где опытные инструкторы детально объясняют каждый этап создания 3D-персонажа. Уроки доступны 24/7 и могут быть просмотрены в любое время и в любом месте.
+          </p>
+          <span class="absolute top-4 right-4 text-5xl font-bold opacity-10">01</span>
+          <img src="./images/Image (4).png" alt="Character 1" class="absolute bottom-0 right-4 w-24 opacity-20" />
+        </div>
+    
+        <!-- Practical Exercises Card -->
+        <div class="bg-blue-700 p-6 rounded-lg relative">
+          <h3 class="text-xl font-semibold">Практические упражнения</h3>
+          <p class="mt-4 text-sm">
+            Каждый блок уроков сопровождается практическими упражнениями, которые позволяют вам практиковать свои навыки и закрепить полученные знания на практике.
+          </p>
+          <span class="absolute top-4 right-4 text-5xl font-bold opacity-10">02</span>
+          <img src="./images/Frame (3).png" alt="Character 2" class="absolute bottom-0 right-4 w-24 opacity-20" />
+        </div>
+    
+        <!-- Projects Card -->
+        <div class="bg-blue-700 p-6 rounded-lg relative">
+          <h3 class="text-xl font-semibold">Проекты</h3>
+          <p class="mt-4 text-sm">
+            Курс включает в себя проектные работы, где вы должны создать своего собственного персонажа в ZBrush, начиная с концептуального дизайна и заканчивая окончательным рендером.
+          </p>
+          <span class="absolute top-4 right-4 text-5xl font-bold opacity-10">03</span>
+          <img src="./images/Image (4).png" alt="Character 3" class="absolute bottom-0 right-4 w-24 opacity-20" />
+        </div>
+    
+        <!-- Mentorship Card -->
+        <div class="bg-blue-700 p-6 rounded-lg relative">
+          <h3 class="text-xl font-semibold">Наставничество</h3>
+          <p class="mt-4 text-sm">
+            В течение всего обучения вы получаете комментарии и обратную связь от преподавателей, чтобы улучшить свои навыки и повысить качество своих работ.
+          </p>
+          <span class="absolute top-4 right-4 text-5xl font-bold opacity-10">04</span>
+          <img src="./images/Image (4).png" alt="Character 4" class="absolute bottom-0 right-4 w-24 opacity-20" />
+        </div>
+    
+        <!-- Certificate Card -->
+        <div class="bg-blue-700 p-6 rounded-lg relative">
+          <h3 class="text-xl font-semibold">Сертификат</h3>
+          <p class="mt-4 text-sm">
+            По завершении обучения вы получаете сертификат о прохождении курса, который подтверждает ваши навыки и знания в области художественного моделирования в ZBrush.
+          </p>
+          <span class="absolute top-4 right-4 text-5xl font-bold opacity-10">05</span>
+          <img src="./images/Image (4).png" alt="Character 5" class="absolute bottom-0 right-4 w-24 opacity-20" />
+        </div>
+      </div>
+  
+     </section>
+    
+                      
+  
+   
+  
+  
+  
+    <section class="container max-w-4xl m-auto px-6 py-12">
+      <div class="grid gap-8 md:grid-cols-2">
+        <!-- Subscription Option -->
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4 text-blue-400">Подписка PRO</h3>
+          <p class="text-gray-300 mb-4">Оформи подписку и плати частями на пути всего обучения</p>
+          <ul class="text-gray-400 space-y-2">
+            <li>Полный доступ к курсам</li>
+            <li>Чат со спикерами</li>
+            <li>Техподдержка от кураторов</li>
+            <li>Доступ к домашним заданиям</li>
+          </ul>
+          <p class="text-3xl font-bold mt-4">3,500 ₽/мес</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 rounded-lg">Оформить подписку</button>
+        </div>
+    
+        <!-- Purchase Option -->
+        <div class="bg-gray-800 p-6 rounded-lg">
+          <h3 class="text-2xl font-bold mb-4">Покупка курса</h3>
+          <p class="text-gray-300 mb-4">Оплати курс сразу с выгодой 20%</p>
+          <ul class="text-gray-400 space-y-2">
+            <li>Доступ к курсам навсегда</li>
+            <li>Чат со спикерами</li>
+            <li>Техподдержка от кураторов</li>
+            <li>Минус 20% в подарок</li>
+            <li>Тогда не придется сдавать домашнее задание</li>
+          </ul>
+          <p class="text-3xl font-bold mt-4">20,000 ₽</p>
+          <button class="mt-4 px-4 py-2 bg-blue-600 rounded-lg">Купить курс</button>
+        </div>
+      </div>
+    </section>
+    
+  <section  class=" container w-[1200px] m-auto bg-black text-white p-8">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8">
+        <!-- Image Section -->
+        <div class=" rounded-lg p-4 md:w-1/2 flex justify-center">
+          <img src="./images/Frame (1).png" alt="Characters" class="rounded-lg max-w-full" />
+        </div>
+    
+        <!-- Text Section -->
+        <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold">Остались вопросы?</h2>
+          <p class="mt-4 text-lg">
+            Напиши нам в телеграм или в онлайн-чат и мы с радостью ответим на все ваши вопросы.
+          </p>
+          <a href="#" class="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white rounded-lg text-lg font-semibold hover:bg-blue-700 transition">
+      <!-- Telegram icon SVG code --></svg><img src="./images/Vector (1).png" alt="">
+            Написать в Telegram
+          </a>
+        </div>
+      </div>
+    
+      <!-- Footer Section -->
+      <div class="flex flex-col md:flex-row items-center justify-between mt-12 border-t border-gray-700 pt-8 text-gray-400 text-sm">
+        <div class="flex items-center gap-2">
+          <img src="./images/Group.png" alt="First Flight School Logo" class="w-8 h-8" />
+          <span>First Flight School</span>
+        </div>
+        <div class="flex gap-6 mt-4 md:mt-0">
+          <a href="#" class="hover:text-white">О курсе</a>
+          <a href="#" class="hover:text-white">Для кого</a>
+          <a href="#" class="hover:text-white">Преподаватель</a>
+          <a href="#" class="hover:text-white">Программа</a>
+        </div>
+        <button class="mt-4 md:mt-0 px-4 py-2 border border-white rounded-lg text-white hover:bg-white hover:text-black transition">
+          Записаться
+        </button>
+      </div>
+    
+      <!-- Footer Bottom Text -->
+      <div class="flex justify-between text-gray-600 text-xs mt-8">
+        <span>&copy;2024, First Flight School</span>
+        <div class="flex gap-4">
+          <a href="#" class="hover:text-white">Обработка персональных данных</a>
+          <a href="#" class="hover:text-white">Оферта</a>
+        </div>
+      </div>
+  
+  
+  </section>
+    
 </body>
 </html>
