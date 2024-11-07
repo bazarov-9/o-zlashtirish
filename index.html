@@ -5,42 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Hubot+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+  body {
+    font-family: 'Hubot Sans', sans-serif;
+  }
+</style>
 <body>
  <body class="bg-black">
 
   <div class="flex items-center justify-between px-6 lg:px-44 container mx-auto mt-5">
       <!-- Logo -->
-      <a href="#" class="hover:text-amber-400 text-white text-xl">First Flight <br> School</a>
+      <a href="#" class="hover:text-[#CFF649] text-white text-xl">First Flight <br> School</a>
 
       <!-- Burger Button for Mobile -->
       <div class="lg:hidden">
-        <button id="burger" class="hover:text-amber-400 text-white text-2xl focus:outline-none">
+        <button id="burger" class="hover:text-[#CFF649] text-white text-2xl focus:outline-none">
           ☰
         </button>
       </div>
 
       <!-- Menu for Desktop -->
       <ul id="menu" class="hidden lg:flex space-x-10 text-white gap-20">
-        <li><a href="#home" class="hover:text-amber-400">О себе</a></li>
-        <li><a href="#about" class="hover:text-amber-400">Для кого</a></li>
-        <li><a href="#services" class="hover:text-amber-400">Преподователь</a></li>
-        <li><a href="#contact" class="hover:text-amber-400">Программа</a></li>
+        <li><a href="#home" class="hover:text-[#CFF649]">О себе</a></li>
+        <li><a href="#about" class="hover:text-[#CFF649]">Для кого</a></li>
+        <li><a href="#services" class="hover:text-[#CFF649]">Преподователь</a></li>
+        <li><a href="#contact" class="hover:text-[#CFF649]">Программа</a></li>
       </ul>
 
       <!-- Button for Desktop -->
       <a href="#home" class="hidden lg:block">
-        <button class=" rounded-lg border-2 border-[#4958f6]">
-          <p class="text-white py-2 px-6  hover:bg-blue-600 hover:text-white">Записаться</p>
+        <button class=" rounded-lg border-2 border-[#CFF649]">
+          <p class="text-white py-2 px-6  hover:bg-[#CFF649] rounded-sm hover:text-black">Записаться</p>
         </button>
       </a>
     </div>
 
     <!-- Responsive Mobile Menu -->
     <ul id="mobileMenu" class="hidden flex-col lg:hidden mt-4 px-6 bg-black rounded text-white space-y-2">
-      <li><a href="#home" class="block px-4 py-2 hover:bg-amber-500">О себе</a></li>
-      <li><a href="#about" class="block px-4 py-2 hover:bg-amber-500">Для кого</a></li>
-      <li><a href="#services" class="block px-4 py-2 hover:bg-amber-500">Преподователь</a></li>
-      <li><a href="#contact" class="block px-4 py-2 hover:bg-amber-500">Программа</a></li>
+      <li><a href="#home" class="block px-4 py-2 hover:bg-[#CFF649]">О себе</a></li>
+      <li><a href="#about" class="block px-4 py-2 hover:bg-[#CFF649]">Для кого</a></li>
+      <li><a href="#services" class="block px-4 py-2 hover:bg-[#CFF649]">Преподователь</a></li>
+      <li><a href="#contact" class="block px-4 py-2 hover:bg-[#CFF649]">Программа</a></li>
     </ul>
 
   
@@ -49,23 +55,24 @@
 
 <section class="container mx-auto flex flex-col items-center md:flex-row justify-around px-6 py-12 md:py-24">
   <div class="text-center md:text-left max-w-md space-y-4">
-    <span class="t px-3 py-1 rounded-full text-white border-white">Профессия</span>
+    <a href="#" class="px-6 py-2 rounded-full text-white border-white border-2">Профессия</a>
     <h2 class="text-4xl text-white md:text-5xl font-bold">Stylized Environment Art</h2>
     <p class="text-gray-300">Научись создавать окружение для игровой компьютерной графики с нуля до конечного результата в виде готовой игровой локации для вашего портфолио.</p>
-    <button class="bg-blue-600 text-white px-6 py-3 mt-4 rounded-full hover:bg-blue-700">Записаться</button>
+    <button class="border border-[#CFF649] hover:bg-black   hover:text-white py-2 px-6 mt-4 rounded-lg bg-[#CFF649] text-black">Записаться</button>
   </div>
   <div class="mt-8 md:mt-0 w-56 h-96  ">
-    <img src="./images/Image (1).png" alt="3D Character Image" class="rounded-lg w-96 mt-36 h-60">
+    <img src="img/Mask group (1).png" alt="3D Character Image" class="rounded-lg w-auto h-auto mt-36">
   </div>
 </section>
 
-<section class="container mx-auto bg-black py-8 px-6 rounded-lg flex justify-center flex-wrap gap-6">
-  <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Blender" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
-  <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="ZBrush" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
-  <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Substance Painter" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
-  <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Marmoset Toolbag" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
-  <img src="./images/Снимок экрана 2024-11-01 202404.png" alt="Maya" class="filter w-56 h-24 grayscale hover:grayscale-0 transition-all duration-300">
-</section>
+
+        <!-- Bottom section with artwork images -->
+        <div class="flex justify-around gap-4 mt-6">
+          <img src="img/zbrush (1).svg" alt="Artwork 1" class="bg-[#1b1b1b] px-10 py-4 rounded-lg object-cover" />
+          <img src="img/zbrush (1).svg" alt="Artwork 2" class="bg-[#1b1b1b] px-10 py-4 rounded-lg object-cover" />
+          <img src="img/zbrush (1).svg" alt="Artwork 3" class="bg-[#1b1b1b] px-10 py-4 rounded-lg object-cover" />
+          <img src="img/zbrush (1).svg" alt="Artwork 4" class="bg-[#1b1b1b] px-10 py-4 rounded-lg object-cover" />
+        </div>
 
   <section class="container m-auto px-6 py-12 md:flex md:justify-center md:space-x-8">
     <!-- Media Section -->
