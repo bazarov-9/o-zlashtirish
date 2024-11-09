@@ -5,7 +5,11 @@ module.exports = {
     "./**/*.html"           
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'custom-bg': "url('/img/6-1.png')", // Bu yerda rasm yo'lini yozing
+      }
+    },
   },
   plugins: [],
 }
